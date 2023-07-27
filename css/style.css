@@ -1,0 +1,422 @@
+ body{
+    height: 2000px;
+ }
+ *{
+    padding: 0;
+    margin: 0;
+ }
+ a{
+    text-decoration: none;
+ }
+ ul{
+    list-style: none;
+ }
+ :root{
+    --gray:#f7f7f7;
+ }
+ /* =============home================= */
+ .home{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ }
+  .home .icons{
+    display: flex;
+    justify-content: center;
+ }
+
+ .home .logo-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* ================ start navbar =================*/
+.active{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.navbar-nav .nav-link.active{
+    color: #fff;
+}
+.nav-item a{
+    color: #fff;
+    margin: 10px;
+    display: inline-block;
+}
+
+.navbar-toggler-icon{
+    border: 0;
+    color: #fff;
+    
+} 
+/* =================end navbar================= */
+h1::after{
+    content: "|";
+    animation-name:names;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes names{
+    0%{content: " L|";}
+    1%{content: "La|";}
+    2%{content: "Lar|";}
+    3%{content: "Larr|";}
+    4%{content: "Larry |";}
+    5%{content: "Larry D|";}
+    6%{content: "Larry Da|";}
+    7%{content: "Larry Dan|";}
+    8%{content: "Larry Dani|";}
+    9%{content: "Larryy Danie|";}
+    10%{content: "Larryy Daniel|";}
+    26%{content: "Larry Daniels|";}
+
+    27%{content: "Larry Daniel|";}
+    28%{content: "Larry Danie|";}
+    29%{content: "Larry Dani|";}
+    30%{content: "Larry Dan|";}
+    31%{content: "Larry Da|";}
+    32%{content: "Larry D|";}
+    33%{content: "Larry|";}
+    34%{content: "Larr|";}
+    35%{content: "Lar|";}
+    36%{content: "La|";}
+    37%{content: "L|";}
+    38%{content: "|";}
+   
+    39%{content: "D|";}
+    40%{content: "De|";}
+    41%{content: "Dev|";}
+    42%{content: "Deve|";}
+    43%{content: "Devel|";}
+    44%{content: "Develo|";}
+    45%{content: "Develop|";}
+    46%{content: "Develope|";}
+    62%{content: "Developer|";}
+
+    63%{content: "Develope|";}
+    64%{content: "Develo|";}
+    65%{content: "Devel|";}
+    67%{content: "Deve|";}
+    68%{content: "Dev|";}
+    69%{content: "De|";}
+    70%{content: "D|";}
+    71%{content: "|";}
+    72%{content: "D|";}
+    73%{content: "De|";}
+    74%{content: "Des|";}
+    75%{content: "Desi|";}
+    76%{content: "Desig|";}
+    77%{content: "Design|";}
+    78%{content: "Designe|";}
+    92%{content: "Designer|";}
+
+    93%{content: "Designe|";}
+    94%{content: "Design|";}
+    95%{content: "Desig|";}
+    96%{content: "Desi|";}
+    97%{content: "Des|";}
+    98%{content: "De|";}
+    99%{content: "D|";}
+    100%{content: "|";}
+}
+/* =======================about ====================== */
+.about .layer{
+    z-index: -1;
+    top:31%;
+    left:-5%;
+    background-image: url(../images/dots.png);
+}
+.about .a2-border{
+    border: 1px solid black;
+    padding: 7px 20px;
+    color: black; 
+    transition: 0.5s all;
+}
+.about .a2-border:hover{
+    border: 1px solid black;
+    background-color:black;
+    color: #fff; 
+}
+.about .a1-border {
+    background-color: #000;
+    color:#fff;
+}
+.about .a1-border:hover{
+    background-color: #fff;
+    border: 1px solid black;
+    color: #000;
+}
+/* =====================servies======================= */
+.services{
+    background-color: var(--gray);
+}
+
+.title{
+    
+    /* background-position: center;
+    background-size: cover; */
+    display: flex;
+    justify-content: center;
+   
+}
+ .services h3{
+    background-image: url(../images/dots.png);
+    font-size: 40px;
+}
+.services .ser-icon{
+    width: 50px;
+    height: 50px;
+    background-color:var(--gray) ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    align-items: center;
+    margin:  50px auto 20px;
+    transition: 0.5s all;
+}
+.services .ser-blog:hover .ser-icon{
+    background-color: #000;
+    color: #fff;
+}
+.services h3{
+    font-weight: bolder;
+}
+.services p{
+    font-family: 'Poppins', sans-serif;
+    color: #748182;
+}
+.services i{
+    font-size: 30px;
+}
+/* ================portofolio================== */
+.nav-pills .nav-link.active{
+    background: none;
+    border-radius: 0;
+    color: #000;
+    border-bottom: 3px solid #000 ;
+}
+.nav-pills .nav-link{
+    color: #000;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.portfolio .pro-items{
+    position: relative;
+    overflow: hidden;
+   
+}
+.portfolio .layer{
+    background-color: #fff;
+    opacity: 0;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.5s all;
+    color: #000;
+    text-align: center;
+    margin: auto;
+}
+.portfolio .layer i{
+    font-size: 12px;
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s all;
+}
+.portfolio .layer i:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.portfolio .pro-items:hover .layer{
+    opacity: 0.95;
+
+} 
+.portfolio h3{
+    background-image: url(../images/dots.png);
+    font-size: 40px;
+}
+/* }==============slider===================== */
+.slider{
+    background-color: var(--gray);
+}
+.slider p,span{
+    color: #748182;
+}
+.slider h3{
+    background-image: url(../images/dots.png);
+    font-size: 40px;
+} 
+ .slider .nav-link{
+    width: 10px;
+    height: 10px;
+    background-color: #eee;
+    border: 0;
+    border-radius: 50%;
+}
+  .slider .nav-tabs .nav-link.active{
+    background-color: grey;
+}
+.slider .nav-tabs{
+    border: 0;
+}
+
+
+.slid-img{
+    width: 100px;
+    height: 100px;
+}
+.slid-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.tab-pane{
+    border: 0;
+}
+
+/* ==================num============= */
+.num{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+.num i{
+    font-size: 25px;
+}
+.num p{
+    font-size: 30px;
+}
+.num span{
+    color:rgb(116, 129, 130);
+    font-weight: bold;
+}
+/* =======================team ======================*/
+.team{
+    padding: 50px 0;
+    background-color: var(--gray);
+}
+.team h3{
+    background-image: url(../images/dots.png);
+    font-size: 40px;
+}
+.team .team-caption{
+    padding: 10px;
+    background-color: #5b5b5b;
+    border-radius: 0px 0px 5px 5px;
+    color: #fff;
+}
+.team .team-items .layer{
+    transform: rotatey(180deg);
+    transition: 0.5s all;
+}
+.team .team-items:hover .layer{
+    transform: rotatey(0deg);
+    opacity: 1;
+    overflow: hidden;
+    
+   
+}
+.team .team-items img{
+    transition: 0.5s all;
+}
+.team .team-items:hover img{
+    transform: scale(1.2);
+}
+.team .layer{
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    background-color: #fff;
+    margin: auto;
+    transition: 0.5s all;
+    opacity: 0;
+   
+}
+.team  i{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.team .layer i:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+/* =============contact=============== */
+
+.contact h3{
+    background-image: url(../images/dots.png);
+    font-size: 40px;
+}
+.contact i{
+    background-color: var(--gray);
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: 0.5s all;
+}
+
+.contact p{
+    font-size: 20px;
+}
+.contact span{
+    color:rgb(116, 129, 130);
+    font-weight: bold;
+}
+
+.contact  .contact-item:hover i{
+    background-color: #000;
+    color: #fff;
+    /* border: 1px solid #000; */
+}
+.contact input,textarea{
+    background-color: var(--gray);
+    border-radius: 5px;
+}
+.contact input,textarea:focus{
+    outline: 0;
+}
+.contact button{
+    width: 100px;
+    border: 0;
+    padding: 10px;
+    background-color: #000;
+    color:#fff;
+    border-radius: 5px;
+    transition: 0.5s all;
+    
+}
+.contact button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+
+}
+/* ==================footer========================== */
+footer{
+    background-color: #1c1c1c;
+}
+footer p{
+    color: #748182;
+    font-size: 13px;
+}
+
+
+
